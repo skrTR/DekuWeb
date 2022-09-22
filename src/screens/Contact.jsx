@@ -66,11 +66,8 @@ class Contact extends Component {
                   <div className="inner">
                     <h4 className="title">Утсаар холбогдох</h4>
                     <p>
-                      <a href="tel:+976 99266600">+976 9926 6600</a>
+                      <a href="tel:+976 99266600">+976 9929 6600</a>
                     </p>
-                    {/* <p>
-                      <a href="tel:+856 325 652 984">+856 325 652 984</a>
-                    </p> */}
                   </div>
                 </div>
               </div>
@@ -85,9 +82,7 @@ class Contact extends Component {
                   <div className="inner">
                     <h4 className="title">И-мэйл</h4>
                     <p>
-                      <a href="mailto:admin@gmail.com">
-                        lkdelgermaa84@gmail.com
-                      </a>
+                      <a href="mailto:admin@gmail.com">contact@medialab.mn</a>
                     </p>
                   </div>
                 </div>
@@ -102,7 +97,7 @@ class Contact extends Component {
                   </div>
                   <div className="inner">
                     <h4 className="title">Хаяг</h4>
-                    <p>Монгол улс, Улаанбаатар, Талбай</p>
+                    <p>Монгол улс, Улаанбаатар</p>
                   </div>
                 </div>
               </div>

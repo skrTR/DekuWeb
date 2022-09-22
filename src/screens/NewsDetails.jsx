@@ -12,7 +12,7 @@ const BlogDetails = (props) => {
   const [data, setData] = useState([]);
   const getData = () => {
     axios
-      .get(`http://167.71.196.5/api/v1/articles/${props.match.params.id}`)
+      .get(`https://medialabadmin.com/api/v1/articles/${props.match.params.id}`)
       .then((res) => {
         setData(res.data.data);
       })
@@ -29,7 +29,11 @@ const BlogDetails = (props) => {
   }
   return (
     <React.Fragment>
-      <PageHelmet pageTitle="Нийтлэл" />
+      <PageHelmet
+        title="Нийтлэл"
+        ogDescrtiption={data.title}
+        image={data.image}
+      />
       <Header
         headertransparent="header--transparent"
         colorblack="color--black"
@@ -39,7 +43,7 @@ const BlogDetails = (props) => {
       <div
         className="rn-page-title-area pt--120 pb--190 bg_image "
         style={{
-          backgroundImage: `url(http://167.71.196.5/upload/${data.image})`,
+          backgroundImage: `url(https://medialabadmin.com/upload/${data.image})`,
         }}
         data-black-overlay="7"
       >

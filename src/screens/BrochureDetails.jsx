@@ -12,7 +12,9 @@ const BrochureDetails = (props) => {
   const [data, setData] = useState([]);
   const getData = () => {
     axios
-      .get(`http://167.71.196.5/api/v1/brochures/${props.match.params.id}`)
+      .get(
+        `https://medialabadmin.com/api/v1/brochures/${props.match.params.id}`
+      )
       .then((res) => {
         setData(res.data.data);
       })
@@ -39,7 +41,7 @@ const BrochureDetails = (props) => {
       <div
         className="rn-page-title-area pt--120 pb--190 bg_image "
         style={{
-          backgroundImage: `url(http://167.71.196.5/upload/${data.image})`,
+          backgroundImage: `url(https://medialabadmin.com/upload/${data.image})`,
         }}
         data-black-overlay="7"
       >

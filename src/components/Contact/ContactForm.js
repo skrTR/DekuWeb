@@ -15,10 +15,10 @@ function ContactForm({ props }) {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_p4x3hv8",
-        "template_jgfr42f",
+        "service_7qrwnje",
+        "template_z00jt2w",
         e.target,
-        "user_jrfTH2e0Ely35ZCVFdT9S"
+        "oXYkSIlHjM273tRfG"
       )
       .then(
         (result) => {
@@ -39,15 +39,25 @@ function ContactForm({ props }) {
   return (
     <form action="" onSubmit={sendEmail}>
       <div className="rn-form-group">
-        <input type="text" name="fullname" placeholder="Өөрийн нэр" required />
+        <input type="text" name="user_name" placeholder="Өөрийн нэр" required />
       </div>
 
       <div className="rn-form-group">
-        <input type="email" name="email" placeholder="И-мэйл хаяг" required />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="И-мэйл хаяг"
+          required
+        />
       </div>
 
       <div className="rn-form-group">
-        <input type="text" name="phone" placeholder="Утасны дугаар" required />
+        <input
+          type="text"
+          name="user_phone"
+          placeholder="Утасны дугаар"
+          required
+        />
       </div>
 
       <div className="rn-form-group">

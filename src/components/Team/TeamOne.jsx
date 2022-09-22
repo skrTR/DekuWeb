@@ -4,7 +4,7 @@ const TeamOne = (props) => {
   const [post, setPost] = useState([]);
   const getData = () => {
     axios
-      .get(`http://167.71.196.5/api/v1/users?limit=1000&team=Media Lab`)
+      .get(`https://medialabadmin.com/api/v1/users?limit=1000&team=Media Lab`)
       .then((res) => {
         console.log(res.data.data);
         setPost(res.data.data);
@@ -23,7 +23,7 @@ const TeamOne = (props) => {
           <div className={`team team-style--bottom`}>
             <div className="thumbnail">
               <img
-                src={`http://167.71.196.5/upload/${value.profile}`}
+                src={`https://medialabadmin.com/upload/${value.profile}`}
                 alt="Blog Images"
               />
             </div>

@@ -15,7 +15,7 @@ import Helmet from "../components/Helmet/Helmet";
 import AboutTwo from "../components/AboutUs/AboutTwo";
 
 const image1 = "/assets/images/bg/paralax/black.jpg";
-const logo = "/assets/images/medialab/500x250.1.png";
+const logo = "/assets/images/medialab/2new.png";
 const ServiceLists = [
   {
     icon: <FiCast />,
@@ -40,7 +40,7 @@ const HomeScreen = () => {
   const [PostList, setPostList] = useState([]);
   const getData = () => {
     axios
-      .get(`http://167.71.196.5/api/v1/articles?limit=3&-createdAt`)
+      .get(`https://medialabadmin.com/api/v1/articles?limit=3&-createdAt`)
       .then((res) => {
         setPostList(res.data.data);
       })
@@ -158,7 +158,7 @@ const HomeScreen = () => {
                     <a href={`/news-details/${value._id}`}>
                       <img
                         className="w-100"
-                        src={`http://167.71.196.5/upload/${value.profile}`}
+                        src={`https://medialabadmin.com/upload/${value.profile}`}
                         alt="Blog Images"
                       />
                     </a>

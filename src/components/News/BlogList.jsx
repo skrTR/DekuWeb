@@ -5,7 +5,7 @@ const BLogList = () => {
   const [PostList, setPostList] = useState([]);
   const getData = () => {
     axios
-      .get(`http://167.71.196.5/api/v1/articles?limit=1000`)
+      .get(`https://medialabadmin.com/api/v1/articles?limit=1000`)
       .then((res) => {
         setPostList(res.data.data);
       })
@@ -26,7 +26,7 @@ const BLogList = () => {
                 <a href={`/news-details/${value._id}`}>
                   <img
                     className="w-100"
-                    src={`http://167.71.196.5/upload/${value.profile}`}
+                    src={`https://medialabadmin.com/upload/${value.profile}`}
                     alt="Blog Images"
                   />
                 </a>
